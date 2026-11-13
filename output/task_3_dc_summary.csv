@@ -1,0 +1,5 @@
+location,Total parts,Stockout %,Short %,Healthy %,Excess %,No Demand %,Median WOS (wks),Extra pallets
+GDC,97,5.0,37.0,30.0,19.0,9.0,8.8,728.0
+PDC1,84,20.0,25.0,18.0,20.0,17.0,2.8,267.0
+PDC2,91,13.0,26.0,22.0,24.0,14.0,6.6,568.0
+PDC3,73,18.0,22.0,38.0,10.0,12.0,5.0,243.0
