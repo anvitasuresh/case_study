@@ -33,10 +33,11 @@ Each script builds on the one before it (it imports the previous step), so any o
 
 A Streamlit chat app where a planner asks questions in plain English (e.g. "Show me all Excess parts for Sofia Novak at PDC2"). Gemini only picks one of four pandas functions in assistant_tools.py and fills in its inputs; the app runs that function on the data and shows the table and chart, so every number comes from the code, not the model.
 
-bash
+```bash
 pip install google-genai streamlit python-dotenv
 echo "GEMINI_API_KEY=your-key-here" > .env     # free key from Google AI Studio; .env is git-ignored
 streamlit run assistant.py
+```
 
 - see `screenshots/` to see the assistant UI and 3 questions it responded to
 

@@ -39,6 +39,8 @@ e.g. **SKU98 at PDC2** is stocked out (165/week) and its 1,505 pieces don't arri
 **5. 47 parts will still be short at one DC but excess at another → rebalance before buying.**
 Transferring between DCs is usually faster and cheaper than a new supplier order.
 
+*Who to contact:* most of the problem orders are supplier POs, but GDC transfers account for about a third of the late and excess-causing orders. Late arrivals: 27 supplier vs. 17 transfer. Orders that push stock into excess: 32 supplier vs. 22 transfer. This could potentially tell the planner who to talk to: supplier orders go to purchasing team, and GDC transfers go to the GDC/logistics team.
+
 ## Limitations
 - Projection adds all supply at once; it doesn't model *when* stock runs out between arrivals (a month-by-month projection would).
 - No lead times or costs, so I can't say whether expediting or transferring is cheaper for a given part.

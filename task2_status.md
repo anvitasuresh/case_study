@@ -28,11 +28,11 @@ The rules are checked in that order (No Demand first, then Stockout, Short, Exce
 
 ### Why different thresholds for the GDC and PDCs
 They get restocked differently, so they need different amounts of cover:
-- **Short threshold ≈ how long it takes to get more stock.** PDCs are restocked from the GDC, which is relatively fast, so about **1 month** of cover is enough. The GDC buys from suppliers, which is slower. The open supplier orders arrive up to ~12 weeks out, so the GDC needs about **2 months** of cover.
-- **Excess threshold = a reasonable planning horizon.** More than a quarter (13 weeks) at a PDC, or more than half a year (26 weeks) at the GDC, ties up cash and space. 26 weeks also matches the 6-month demand window used for WOS.
+- **Short threshold ≈ how long it takes to get more stock.** PDCs are restocked from the GDC, which is relatively fast, so about **1 month** of cover is enough. The GDC buys from suppliers, which is slower. A typical open supplier order to the GDC arrives about 8 weeks out (median), so the GDC needs about 8 weeks of cover to avoid running out before it lands.
+- **Excess threshold = a reasonable planning horizon.** More than a quarter (13 weeks) at a PDC, or more than half a year (26 weeks) at the GDC, ties up money and space. 26 weeks also matches the 6-month demand window used for WOS.
 - Using one set of thresholds everywhere would either flag the GDC as short all the time or let the PDCs hold far too much.
 
-The thresholds are one setting at the top of `status.py`, so they're easy to change if the team uses different targets.
+The thresholds are one setting at the top of `task2_status.py`, so they're easy to change if the team uses different targets.
 
 ## Results
 
