@@ -1,6 +1,6 @@
 # Task 2: Inventory Status
 
-**Code:** `status.py` (uses the WOS table from `wos.py`)
+**Code:** `taske2_status.py` (uses the WOS table from `wos.py`)
 **Output:** `output/task2_inventory_status.csv` (WOS + status for all 345 part-locations)
 
 ## Why a status metric
