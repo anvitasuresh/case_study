@@ -41,6 +41,23 @@ Transferring between DCs is usually faster and cheaper than a new supplier order
 
 *Who to contact:* most of the problem orders are supplier POs, but GDC transfers account for about a third of the late and excess-causing orders. Late arrivals: 27 supplier vs. 17 transfer. Orders that push stock into excess: 32 supplier vs. 22 transfer. This could potentially tell the planner who to talk to: supplier orders go to purchasing team, and GDC transfers go to the GDC/logistics team.
 
+
+
+## How these decisions affect other teams
+
+| Recommendation | Warehouse | Logistics | Finance |
+|---|---|---|---|
+| Redirect orders going to PDC3 | PDC3 doesn't receive stock it doesn't need | Shipments already moving have to be rerouted | No money spent holding extra stock at PDC3 |
+| Order or expedite shortages | More stock to receive | Expedited shipping costs more | Spend money now so customers aren't left waiting |
+| Cover late orders with transfers | Sending DC has to pick and pack the transfer | More shipments to schedule | Shipping cost vs. cost of running out |
+| Check possible double orders | No duplicate shipment to receive and store | One less shipment to handle | Don't pay for stock we don't need |
+| Rebalance before buying more | Frees up space at the DC with extra stock, but takes work to move it | Shipments between DCs | Uses stock we already paid for |
+| Clear out no-demand stock | Frees up about 660 pallets of space | Shipments to return or scrap | Possible write-offs, but lower storage costs |
+
+Most of these fixes shift work and cost from one team to another. For example, rebalancing saves money on new orders, but it adds shipping for logistics and extra work for the warehouse. If I had cost and shipping data and more time for this project, I'd try to compare these tradeoffs.
+
+
+
 ## Limitations
 - Projection adds all supply at once; it doesn't model *when* stock runs out between arrivals (a month-by-month projection would).
 - No lead times or costs, so I can't say whether expediting or transferring is cheaper for a given part.
