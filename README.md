@@ -41,13 +41,8 @@ streamlit run assistant.py
 
 - see `screenshots/` to see the assistant UI and 3 questions it responded to
 
-## Files
+## Other files
 
 - `task1_wos.md` – `task4_supply.md`: method and results for each task
 - `ASSUMPTIONS.md`: definitions, data cleaning, assumptions, and what I'd do with more time
-- Slides: 5-slide summary for the planning manager
-
-## Main settings
-
-- Demand window: next 6 months (`task1_wos.py`)
-- Status thresholds: `THRESHOLDS` at the top of `task2_status.py`
+- `Service Parts Inventory Health Check.pdf`: 5-slide summary for the planning manager
