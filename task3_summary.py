@@ -53,6 +53,6 @@ summary = summary[
 
 if __name__ == "__main__":
     os.makedirs("output", exist_ok=True)
-    summary.to_csv("output/task_3_dc_summary.csv")
-    print("saved output/task_3_dc_summary.csv\n")
+    summary.to_csv("output/task3_dc_summary.csv")
+    print("saved output/task3_dc_summary.csv\n")
     print(summary.to_string())
