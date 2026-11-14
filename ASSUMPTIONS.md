@@ -37,7 +37,7 @@
 
 - **The forecast is correct as given.** I didn't adjust it or check its accuracy.
 - **6-month demand window.** I tested 3 vs 6 months. Most parts change little (median ~10%), but replenishment demand is lumpy (46% of its months are zero), and a 3-month window missed big restocking waves. Example: SKU98 at the GDC shows 65 weeks with 3 months vs. 14 weeks with 6 months, and it would actually run out around March.
-- **Thresholds.** There is no lead-time data (ETAs exist but no order dates), so the thresholds are informed assumptions: the GDC buys from suppliers (open orders arrive up to ~12 weeks out), so it needs more cover than PDCs restocked from the GDC. They're one setting at the top of `task2_status.py`.
+- **Thresholds.** There is no lead-time data (ETAs exist but no order dates), so the thresholds are informed assumptions. A typical open supplier order to the GDC arrives about 8 weeks out (median), so the GDC needs about 8 weeks of cover. PDCs can be restocked from the GDC, so I used a lower 4-week cutoff, though PDC orders often arrive about 6 weeks out, so this is the softest assumption. They're one setting at the top of `task2_status.py`.
 - **All incoming supply counts.** Every open order arrives by Jan 12, 2027, inside the 6-month window. GDC Transfers have already left the GDC, so counting them at the receiving PDC doesn't double count.
 - **Pallets.** Every container is a standard pallet (per the README); partially filled pallets aren't modeled.
 - **No cost data,** so extra stock is measured in pallets, not dollars.
